@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple cal...</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="min-h-screen flex justify-center bg-slate-100 items-center">
+
+
+    <form class="bg-white w-[30rem] shadow h-[30rem] rounded-lg p-2">
+        <h1 class="text-center mt-4 font-[400] text-[16px]">Calculator</h1>
+        <div class="flex justify-center flex-col space-y-4 mx-[3rem]">
+            <div class="inline-flex flex-col">
+                <label class="text-gray-500 text-[15px] mb-2" for="number1">Enter number one</label>
+                <input class="bg-gray-100 focus:bg-red-100 p-2 rounded-lg" type="number" id="number1" name=""
+                    placeholder="0">
+            </div>
+            <div class="inline-flex flex-col">
+                <label class="text-gray-500 text-[15px] mb-2" for="number1">Select condation</label>
+                <select class="bg-gray-100 focus:bg-red-100 p-2 rounded-lg" id="condation">
+                    <option value="+">+</option>
+                    <option value="-">-</option>
+                    <option value="*">x</option>
+                    <option value="/">/</option>
+                </select>
+            </div>
+            <div class="inline-flex flex-col">
+                <label class="text-gray-500 text-[15px] mb-2" for="number1">Enter number two</label>
+                <input class="bg-gray-100 focus:bg-red-100 p-2 rounded-lg" type="number" id="number2" name=""
+                    placeholder="0">
+            </div>
+
+            <div class="flex justify-center">
+                <button id="submit-button" type="button"
+                    class="bg-gray-800 text-white px-4 py-2 rounded-lg hover:bg-red-500">Calculate</button>
+            </div>
+            <div id="result" class="flex hidden text-xl justify-center bg-green-100 p-4 rounded-xl text-green-700">
+                00
+            </div>
+        </div>
+    </form>
+
+    <script src="./app.js"></script>
+</body>
+
+</html>
